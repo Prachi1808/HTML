@@ -1,0 +1,25 @@
+<HTML>
+
+<HEAD>
+  <TITLE> Form processing
+  </TITLE>
+  <SCRIPT>
+    function func1() {
+      alert("Your Name:" + document.myform1.text1.value + "\n\n" + "Your password:" + document.myform1.pass1.value + "\n")
+    }
+  </SCRIPT>
+</HEAD>
+
+<BODY>
+  <H2 ALIGN="CENTER"> Basic form processing </H2>
+  <HR>
+  <FORM NAME="myform1">
+    Your Name <BR>
+    <INPUT TYPE="TEXT" NAME="text1" SIZE="15"> <BR>
+    Your password <BR>
+    <INPUT TYPE="PASSWORD" NAME="pass1" SIZE="8"> <BR>
+    <INPUT TYPE="BUTTON" NAME="but1" VALUE="Click Here" onclick="func1()"> <BR>
+  </FORM>
+</BODY>
+
+</HTML>
